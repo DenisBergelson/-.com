@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תאכל לי אותו .COM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container text-center">
+        <h1 class="mb-4">תאכל לי אותו .COM</h1>
+        <p class="mb-4">מלא את הטופס הבא כדי להגיש את התלונה שלך</p>
+
+        <form>
+            <div class="mb-3 text-end">
+                <label for="fullName" class="form-label">שם מלא</label>
+                <input type="text" class="form-control" id="fullName" required>
+            </div>
+
+            <div class="mb-3 text-end">
+                <label for="email" class="form-label">אימייל</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="mb-3 text-end">
+                <label for="subject" class="form-label">נושא התלונה</label>
+                <input type="text" class="form-control" id="subject" required>
+            </div>
+
+            <div class="mb-3 text-end">
+                <label for="message" class="form-label">תיאור</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">שלח תלונה</button>
+        </form>
+    </div>
+
+</body>
+</html>
