@@ -1,0 +1,190 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #f0f5e1, #d4e5b2);
+  font-family: 'Assistant', sans-serif;
+  padding: 40px;
+  animation: fadeInUp 1s ease-out;
+  transition: background 1s;
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.form-container {
+  background-color: #fdfdf5;
+  max-width: 800px;
+  flex-grow: 1;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(40, 60, 20, 0.3);
+  padding: 30px;
+  border: 2px solid #6b8e23;
+  animation: fadeInUp 1.4s ease-out;
+}
+
+h1 {
+  color: #2f4f4f;
+  font-weight: 900;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subtitle {
+  color: #4b5320;
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  animation: fadeInUp 1.6s ease-out;
+}
+
+iframe {
+  width: 100%;
+  height: 550px;
+  border: 2px solid #556b2f;
+  border-radius: 8px;
+  background-color: #f5f5f0;
+}
+
+.person-info {
+  max-width: 200px;
+  animation: fadeInUp 2s ease-out;
+}
+
+.person-img {
+  width: 100%;
+  border-radius: 8px;
+  border: 3px solid #556b2f;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.person-img:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.caption {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #3a3a3a;
+  background-color: #dcedc1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #a3b18a;
+}
+
+.view-answers-btn {
+  margin-top: 25px;
+  background-color: #556b2f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: background 0.3s;
+}
+
+.view-answers-btn:hover {
+  background-color: #6b8e23;
+  cursor: pointer;
+}
+
+/* 🔄 רקע מונפש בדוגמת הסוואה צבאית */
+body {
+  background: repeating-linear-gradient(
+    45deg,
+    #dce3b2,
+    #dce3b2 40px,
+    #b4c186 40px,
+    #b4c186 80px
+  );
+  background-size: 150% 150%;
+  animation: camoFlow 20s linear infinite;
+}
+
+/* אנימציית תנועה לרקע */
+@keyframes camoFlow {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+h1 {
+  background: rgba(255, 255, 255, 0.15);
+  border: 3px dashed #445e1c;
+  padding: 16px 20px;
+  border-radius: 18px;
+  box-shadow: 0 0 15px rgba(100, 120, 70, 0.3);
+  display: inline-block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+h1:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(150, 180, 90, 0.5);
+}
+
+/* רקע מבריק לטופס */
+.form-container {
+  background: linear-gradient(145deg, #f5f5dc, #e6f5d0);
+  border: 2px solid #788a56;
+  box-shadow: 0 8px 18px rgba(34, 51, 0, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+/* אפקט הדגשה לתמונות */
+.person-img {
+  filter: grayscale(20%);
+  transition: all 0.3s ease-in-out;
+}
+
+.person-img:hover {
+  filter: none;
+  transform: scale(1.08) rotate(-1deg);
+  box-shadow: 0 0 12px #a1cc5a;
+}
+
+/* עיצוב הכיתוב עם סמל */
+.caption::before {
+  content: "🎖️ ";
+}
+
+/* כפתור צפייה בתשובות */
+.view-answers-btn {
+  font-family: 'Assistant';
+  font-size: 1rem;
+  margin-top: 25px;
+  background-color: #445e1c;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #a3bf6a;
+  border-radius: 12px;
+  padding: 12px 24px;
+  transition: 0.3s;
+}
+
+.view-answers-btn:hover {
+  background-color: #5f7d2c;
+  box-shadow: 0 0 10px #d2e58a;
+  transform: scale(1.03);
+}
